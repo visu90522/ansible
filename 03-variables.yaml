@@ -5,10 +5,10 @@
     TRAINER: VISHU
     DURATION: 110HRS
   tasks:
-  -name: Devos with AWS
+  - name: Devos with AWS
     ansible.builtin.debug:
       msg: "Hello I am learning ansible"
-  -name: print variables
+  - name: print variables
     ansible.builtin.debug:
       msg: "Hello, I am learning Detgails {{COURSE}}, and {{TRAINER}}, and {{DURATION}}"
 
