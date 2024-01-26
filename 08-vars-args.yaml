@@ -2,5 +2,5 @@
   hosts: mongodb
   tasks:
   - name: print the variable from command line
-    ansible.builtin.degub:
+    ansible.builtin.debug:
       msg: "The value of variable course {{COURSE}}"
