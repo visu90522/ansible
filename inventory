@@ -1,2 +1,6 @@
 [mongodb]
 roboshop-us-dev-db-mongodb-01.vishwadevops.online
+
+[mongodb:vars]
+MONGO_USERNAME=mongoadmin
+MONGO_PASSWORD=mongopassword

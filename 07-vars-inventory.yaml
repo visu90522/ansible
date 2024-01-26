@@ -1,0 +1,6 @@
+- name: from inventoey
+  hosts: mongodb
+  tasks:
+  - name: print mongo username
+    ansible.builtin.debug:
+      msg: "username is {{MONGO_USERNAME}}, password is: {{MONGO_PASSWORD}}"
