@@ -4,8 +4,8 @@
   - variables.yaml
   tasks:
   - name: printing variables
-      ansible.builtin.debug:
-        msg: "We are learning {{NAME}}, Duration is: {{DURATION}}"
+    ansible.builtin.debug:
+      msg: "We are learning {{NAME}}, Duration is: {{DURATION}}"
 
 
 # - name: variables from files
