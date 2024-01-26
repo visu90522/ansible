@@ -1,0 +1,15 @@
+- name: variables at task level
+  hosts: mongodb
+  vars:
+  - money: "1000 RS"
+    land: "100 acrs"
+  tasks:
+  - name: inherit values from play
+    ansible.builtin.debug:
+      msg: "MONEY: {{money}}, LAND: {{land}}"
+  - name: override from values
+    vars:
+    - money: "20000 RS"
+      house: "3 houses"
+    ansible.builtin.debug:
+      msg: "MONEY: {{money}}, LAND: {{houses}}"
