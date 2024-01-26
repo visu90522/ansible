@@ -27,3 +27,15 @@
 #     ansible.builtin.debug:
 #       msg: "Hello, I am learning {{COURSE}}, Trainer is {{TRAINER}}, Duration is {{DURATION}}"
 
+- name: This is for testing
+  hosts: mongodb
+  vars:
+    COURSE: ABCD
+    TYPE: abcd
+    DURATION: 123
+  tasks:
+  - name: Devops
+    ansible.builtin.debug:
+      msg: "Hello I am learning"
+  - name: Print variables
+      msg: "Hi ra {{COURSE}}"
