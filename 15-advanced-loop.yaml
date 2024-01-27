@@ -1,0 +1,28 @@
+# - name: install packages
+#   hosts: mongodb
+#   become: yes
+#   tasks:
+#   - name: install package
+#     ansible.builtin.yum:
+#       name: "{{item.name}}"
+#       state: "{{item.state}}"
+#     # list of map
+#     loop:
+#     - {name: 'nginx', state: 'absent'}
+#     - {name: 'postfix', state: 'installed'}
+#     - {name: 'cyrus-sasl-plain', state: 'absent'}
+#     - { name: 'mailx', state: 'installed' }
+
+- name: install package
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: install packahe
+    ansible.builtin.yum:
+      name: "{{}}"
+      status: "{{}}"
+    loop:
+    - {name: 'nginx', state: 'absent'}
+    - {name: 'postfix', state: 'installed'}
+    - {name: 'cyrus-sasl-plain', state: 'absent'}
+    - { name: 'mailx', state: 'installed' }
