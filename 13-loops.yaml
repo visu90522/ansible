@@ -1,5 +1,5 @@
 - name: loops
-  hosts: mongodb
+  hosts: localhost
   tasks:
   - name: print names
     ansible.builtin.debug:
