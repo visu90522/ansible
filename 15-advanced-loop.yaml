@@ -19,8 +19,8 @@
   tasks:
   - name: install packahe
     ansible.builtin.yum:
-      name: "{{}}"
-      status: "{{}}"
+      name: "{{item.name}}"
+      status: "{{item.state}}"
     loop:
     - {name: 'nginx', state: 'absent'}
     - {name: 'postfix', state: 'installed'}
